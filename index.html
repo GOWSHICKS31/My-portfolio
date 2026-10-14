@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gowshick S | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f1;--ink:#1b2a22;--muted:#5a6b61;--card:#fff;--line:#d5ddd3;--accent:#1f6f5c;--accent-ink:#fff;--chip:#e1ece6}
+@media (prefers-color-scheme:dark){:root{--bg:#121a16;--ink:#e8efea;--muted:#9fb0a6;--card:#1a2520;--line:#2c3a33;--accent:#5fc4a8;--accent-ink:#0f1a15;--chip:#23332c}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;line-height:1.6;font-size:17px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:20px;justify-content:flex-end;padding:20px 0;font-weight:500;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent);text-decoration:underline}
+header.hero{padding:48px 0 56px}
+.hero-row{display:flex;gap:32px;align-items:center;flex-wrap:wrap-reverse}
+.hero-text{flex:1 1 360px}
+.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;object-position:top;border:4px solid var(--accent)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(2.4rem,7vw,4rem);line-height:1.05;margin:0 0 16px}
+.lead{font-size:1.2rem;color:var(--muted);max-width:56ch;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,Georgia,serif;font-size:1.9rem;margin:0 0 22px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.project{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.project h3{margin:0 0 6px;font-size:1.2rem}
+.project p{margin:0 0 12px;color:var(--muted);font-size:.98rem}
+.tools{font-size:.9rem;font-weight:600;color:var(--accent);margin-bottom:10px}
+.project a,.contact a{color:var(--accent);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--chip);padding:7px 14px;border-radius:999px;font-weight:500;font-size:.95rem}
+.about p{max-width:62ch;margin:0 0 14px}
+.resume-box{max-width:620px}
+.resume-img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:10px}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-row">
+      <img class="photo" src="photo.jpg" alt="Photo of Gowshick S">
+      <div class="hero-text">
+        <h1>Hi, I'm Gowshick S.</h1>
+        <p class="lead">Aspiring software engineer. I'm a first-year B.E. student in Computer Science and Design Engineering at SNS College of Technology, Coimbatore, building my skills in Python, Java and web development.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>I'm a Computer Science and Design Engineering student who enjoys solving problems, debugging code and thinking critically about how to make things work better.</p>
+    <p>I've built mini projects where leadership and teamwork played a big part, and I'm looking to grow through internships and hands-on software work.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="project">
+        <h3>TransitIQ</h3>
+        <div class="tools">Personal project</div>
+        <p>Full project description coming soon.</p>
+        <a href="https://github.com/GOWSHICKS31" rel="noopener">View on GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>Python</li><li>Java (basics)</li><li>MS Excel</li><li>Agentic AI</li>
+      <li>Debugging</li><li>Problem solving</li><li>Leadership</li><li>Communication</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <article class="project">
+        <h3>Enterprise Design Thinking Practitioner</h3>
+        <div class="tools">IBM SkillsBuild | 17 Sep 2025</div>
+        <p>Learned user-centered problem solving, empathy, ideation, prototyping and iterative testing to create scalable solutions, while building teamwork and an agile mindset.</p>
+      </article>
+      <article class="project">
+        <h3>Artificial Intelligence with Python (CS50)</h3>
+        <div class="tools">Cursa | 14 Feb 2026</div>
+        <p>Hands-on experience with machine learning, search algorithms, optimization, neural networks and AI problem solving using Python.</p>
+      </article>
+      <article class="project">
+        <h3>Java</h3>
+        <div class="tools">Skillected</div>
+        <p>Foundation in Java programming, supporting my B.E. coursework in software development.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <article class="project">
+        <h3>B.E. Computer Science and Design Engineering</h3>
+        <div class="tools">SNS College of Technology | 2025 to 2029</div>
+        <p>Developing skills in Python, Java and web development, with a foundation in software development, problem solving and application design.</p>
+      </article>
+      <article class="project">
+        <h3>Higher Secondary Education</h3>
+        <div class="tools">SMSM Higher Secondary School | March 2025</div>
+        <p>Built a base in programming logic and core coding principles, including
